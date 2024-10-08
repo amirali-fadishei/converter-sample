@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>همکاری</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.rtl.min.css"
+    integrity="sha384-dc2NSrAXbAkjrdm9IYrX10fQq9SDG6Vjz7nQVKdKcJl3pC+k37e7qJR5MVSCS+wR" crossorigin="anonymous">
+</head>
+
+<body>
+  <main class="job-main">
+    <div class="container col-lg-5">
+      <header>فرم همکاری</header>
+      <div class="form-outer">
+        <form action="action.php" method="POST" class="job-form">
+          <div class="error main-error">فرم را تکمیل کنید *</div>
+          <div class="field">
+            <div class="label">نام</div>
+            <input type="text" name="firstname" class="" />
+            <div class="error error-1">لطفا فیلد را پر نمایید</div>
+            <div class="error error-2">لطفا فیلد را به درستی پر نمایید</div>
+          </div>
+          <div class="field">
+            <div class="label">نام خانوادگی</div>
+            <input type="text" id="lastname" name="lastname" />
+            <div class="error error-3">لطفا فیلد را پر نمایید</div>
+            <div class="error error-4">لطفا فیلد را به درستی پر نمایید</div>
+          </div>
+          <div class="field">
+            <div class="label">ایمیل</div>
+            <input type="text" id="email" name="email" />
+            <div class="error error-5">لطفا فیلد را پر نمایید</div>
+            <div class="error error-6">لطفا فیلد را به درستی پر نمایید</div>
+          </div>
+          <div class="field">
+            <div class="label">شماره تلفن</div>
+            <input type="text" id="phone" name="phone" />
+            <div class="error error-7">لطفا فیلد را پر نمایید</div>
+            <div class="error error-8">لطفا فیلد را به درستی پر نمایید</div>
+          </div>
+          <div class="field">
+            <div class="label">جنسیت</div>
+            <select id="gender" name="gender">
+              <option value="male">مرد</option>
+              <option value="female">زن</option>
+            </select>
+          </div>
+          <div class="field btns">
+            <button class="exitBtn" ><a href="index.html" class="text-decoration-none">خروج</a></button>
+            <button class="submit" type="submit">ارسال</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <script src="scripts/validate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+/* وارد کردن فونت  */
+@import url(fontiran.css);
+
+/* استایل های مقدماتی و پیش فرض */
+body {
+  font-family: iranyekan !important;
+  direction: rtl;
+  margin: 0;
+  background-color: #ebeced;
+}
+
+article {
+  padding: 50px 0;
+}
+
+input {
+  outline: none;
+}
+::placeholder{
+  color: rgb(205, 205, 205) !important;
+}
+/* حذف خط زیر لینک ها */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(154, 154, 154) !important;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* رنگ سازمانی */
+.bg-1 {
+  background: #594fc7;
+}
+
+.text-1 {
+  color: #594fc7;
+}
+
+/* استایل بخش header */
+.header-top {
+  background-color: #1a1557;
+  -o-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+}
+
+.logo {
+  width: 40px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(311deg) brightness(95%) contrast(112%);
+}
+
+.notification a {
+  padding: 15px 20px;
+}
+
+/* استایل بخش features */
+.section-title {
+  color: #fff;
+  background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+  display: inline-block;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -ms-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+  transform: skew(-20deg);
+}
+
+.section-title img {
+  width: 30px;
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(311deg) brightness(95%) contrast(112%);
+}
+
+.feature {
+  min-height: 200px;
+  box-shadow: -3px 8px 14px 1px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 3px solid #fff;
+}
+
+.feature:hover {
+  border: 3px dashed #594fc7;
+  -webkit-transition: transform 0.5s ease-in-out, border 0.3s ease-in-out;
+  -moz-transition: transform 0.5s ease-in-out, border 0.3s ease-in-out;
+  -ms-transition: transform 0.5s ease-in-out, border 0.3s ease-in-out;
+  -o-transition: transform 0.5s ease-in-out, border 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out, border 0.3s ease-in-out;
+}
+
+/* استایل footer */
+footer {
+  padding: 50px;
+  background: url('../icons/footer-bg.jpg');
+  width: 100%;
+}
+
+.social-media span {
+  border: none !important;
+  width: 50px;
+  cursor: pointer;
+}
+
+/* شبکه های اجتماعی */
+.social-media span:hover {
+  transition: all 0.5s ease-in-out;
+}
+
+.social-media span.tel:hover {
+  background: #0088CC !important;
+  color: #fff;
+}
+
+.social-media span.ins:hover {
+  background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  color: #fff;
+}
+
+.social-media span.lin:hover {
+  background: #0A66C2 !important;
+  color: #fff;
+}
+
+.social-media span.git:hover {
+  background: #171515 !important;
+  color: #fff;
+}
+
+.social-media span img {
+  width: 100%;
+}
+/* استایل های فایل job */
+.job-main {
+  background-color: #5258cf;
+  padding: 80px 0;
+}
+.job-main .container {
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 50px 10px;
+}
+.job-main .container header {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+  color: #1a1557;
+}
+.job-main .container .form-outer {
+  width: 90%;
+  margin: 0 auto;
+}
+.job-main .container .form-outer form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.form-outer form .field {
+  width: 100%;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.form-outer form .field:last-child {
+  flex-direction: row;
+}
+form .field .label {
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+  color: gray;
+}
+form .field input {
+  width: 100%;
+  border: none;
+  border: 1px solid lightgrey;
+  padding: 8px 15px 8px 0;
+  font-size: 15px;
+  outline: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+form .field input.success {
+  border-color: #09c372;
+}
+form .field input.i-error {
+  border-color: #ff0000;
+}
+form .field select {
+  width: 100%;
+  padding-right: 10px;
+  font-size: 17px;
+  font-weight: 500;
+  height: 100%;
+}
+.error {
+  color: #ff0000;
+  font-size: 13px;
+  height: 13px;
+  text-align: right;
+  margin-top: 5px;
+  display: none;
+}
+.main-error {
+  font-size: 16px;
+}
+form .field button {
+  width: 45%;
+  height: 40px;
+  border: none;
+  background: rgb(1, 107, 1);
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+form .field button:hover {
+  opacity: 0.85;
+}
+form .field button.exitBtn {
+  background-color: rgb(191, 9, 9);
+}
+form .field button a {
+  color: #fff;
+  display: block;
+}
+.field.btns {
+  width: 100%;
+}
+
+/* پایان استایل */
